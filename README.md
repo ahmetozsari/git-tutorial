@@ -1,179 +1,197 @@
-# git-tutorial
-Git kodları kullanım
-Git’i Yükleyin
-GitHub, en yaygın depo eylemleri için grafiksel bir kullanıcı arabirimi ve Git’in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.
+<div class="col-md-6">
+    
+<h2 id="giti-yükleyin">Git’i Yükleyin</h2>
+<p>GitHub, en yaygın depo eylemleri için grafiksel bir kullanıcı arabirimi ve Git’in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.</p>
 
-GitHub Masaüstü
-https://desktop.github.com/
+<h3 id="github-masaüstü">GitHub Masaüstü</h3>
+<p>https://desktop.github.com/</p>
 
-Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesinde bulabilirsiniz.
+<p>Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesinde bulabilirsiniz.</p>
 
-Tüm platformlar için Git
-https://git-scm.com
+<h3 id="tüm-platformlar-için-git">Tüm platformlar için Git</h3>
+<p>https://git-scm.com</p>
 
-Takım yapılandırna
-Tüm yerel depolar için kullanıcı bilgilerini yapılandırın
+<h2 id="takım-yapılandırna">Takım yapılandırna</h2>
+<p>Tüm yerel depolar için kullanıcı bilgilerini yapılandırın</p>
 
-$ git config --global user.name "[name]"
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.name "[name]"</code></p>
 
-Tüm yerel depolar için kullanıcı bilgilerini yapılandırın
+<p>Tüm yerel depolar için kullanıcı bilgilerini yapılandırın</p>
 
-$ git config --global user.email "[email address]"
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.email "[email address]"</code></p>
 
-Tüm yerel depolar için eposta bilgilerini yapılandırın
+<p>Tüm yerel depolar için eposta bilgilerini yapılandırın</p>
 
-Create repositories
-Yeni bir depo başlatın veya mevcut bir URL’den bir tane edinin
+<h2 id="create-repositories">Create repositories</h2>
+<p>Yeni bir depo başlatın veya mevcut bir URL’den bir tane edinin</p>
 
-$ git init [project-name]
+<p><code class="language-plaintext highlighter-rouge">$ git init [project-name]</code></p>
 
-Belirtilen adla yeni bir yerel depo oluşturur
+<p>Belirtilen adla yeni bir yerel depo oluşturur</p>
 
-$ git clone [url]
+<p><code class="language-plaintext highlighter-rouge">$ git clone [url]</code></p>
 
-Bir projeyi ve tüm sürüm geçmişini indirin
+<p>Bir projeyi ve tüm sürüm geçmişini indirin</p>
 
-Değişiklik yapmak
-Düzenlemeleri inceleyin ve bir işlem gerçekleştirin
 
-$ git status
+</div>
 
-Taahhüt edilecek tüm yeni veya değiştirilmiş dosyaları listeler
+<div class="col-md-6">
+    
+<h2 id="değişiklik-yapmak">Değişiklik yapmak</h2>
+<p>Düzenlemeleri inceleyin ve bir işlem gerçekleştirin</p>
 
-$ git diff
+<p><code class="language-plaintext highlighter-rouge">$ git status</code></p>
 
-Henüz aşamalandırılmamış dosya farklarını gösterir
+<p>Taahhüt edilecek tüm yeni veya değiştirilmiş dosyaları listeler</p>
 
-$ git add [file]
+<p><code class="language-plaintext highlighter-rouge">$ git diff</code></p>
 
-Sürüm hazırlığı için dosyanın anlık görüntüsünü al.
+<p>Henüz aşamalandırılmamış dosya farklarını gösterir</p>
 
-$ git diff --staged
+<p><code class="language-plaintext highlighter-rouge">$ git add [file]</code></p>
 
-Hazırlama ve son dosya sürümü arasındaki dosya farklarını gösterir.
+<p>Sürüm hazırlığı için dosyanın anlık görüntüsünü al.</p>
 
-$ git reset [file]
+<p><code class="language-plaintext highlighter-rouge">$ git diff --staged</code></p>
 
-Dosyayı dizinden kaldırır ama içeriği korur.
+<p>Hazırlama ve son dosya sürümü arasındaki dosya farklarını gösterir.</p>
 
-$ git commit -m"[descriptive message]"
+<p><code class="language-plaintext highlighter-rouge">$ git reset [file]</code></p>
 
-Sürüm geçmişinde dosya anlık görüntülerini kalıcı olarak kaydeder
+<p>Dosyayı dizinden kaldırır ama içeriği korur.</p>
 
-Grup değişiklikleri
-Bir dizi taahhüt adı verin ve daha önce tamamlanmış olan çabaları birleştirin
+<p><code class="language-plaintext highlighter-rouge">$ git commit -m"[descriptive message]"</code></p>
 
-$ git branch
+<p>Sürüm geçmişinde dosya anlık görüntülerini kalıcı olarak kaydeder</p>
 
-Geçerli depodaki tüm yerel dalları listeler
+<h2 id="grup-değişiklikleri">Grup değişiklikleri</h2>
+<p>Bir dizi taahhüt adı verin ve daha önce tamamlanmış olan çabaları birleştirin</p>
 
-$ git branch [branch-name]
+<p><code class="language-plaintext highlighter-rouge">$ git branch</code></p>
 
-Yeni bir dal oluştur
+<p>Geçerli depodaki tüm yerel dalları listeler</p>
 
-$ git checkout [branch-name]
+<p><code class="language-plaintext highlighter-rouge">$ git branch [branch-name]</code></p>
 
-Belirtilen dala geçer ve çalışma dizinini günceller
+<p>Yeni bir dal oluştur</p>
 
-$ git merge [branch-name]
+<p><code class="language-plaintext highlighter-rouge">$ git checkout [branch-name]</code></p>
 
-Belirtilen dalın geçmişini mevcut dalla birleştirir
+<p>Belirtilen dala geçer ve çalışma dizinini günceller</p>
 
-$ git branch -d [branch-name]
+<p><code class="language-plaintext highlighter-rouge">$ git merge [branch-name]</code></p>
 
-Belirtilen dalı siler
+<p>Belirtilen dalın geçmişini mevcut dalla birleştirir</p>
 
-Dosya Yenileme
-Sürümlü dosyaları taşıma ve silme
+<p><code class="language-plaintext highlighter-rouge">$ git branch -d [branch-name]</code></p>
 
-$ git rm [file]
+<p>Belirtilen dalı siler</p>
 
-Dosyayı çalışma dizininden siler ve dizini günceller
+</div>
+<div class="clearfix"></div>
 
-$ git rm --cached [file]
+<div class="col-md-6">
+    
+<h2 id="dosya-yenileme">Dosya Yenileme</h2>
+<p>Sürümlü dosyaları taşıma ve silme</p>
 
-Dosyayı sürüm kontrolünden kaldırır ancak dosyayı yerel olarak korur
+<p><code class="language-plaintext highlighter-rouge">$ git rm [file]</code></p>
 
-$ git mv [file-original] [file-renamed]
+<p>Dosyayı çalışma dizininden siler ve dizini günceller</p>
 
-Dosya adını değiştirir ve işleme için hazırlayın
+<p><code class="language-plaintext highlighter-rouge">$ git rm --cached [file]</code></p>
 
-İzlemeyi bastır
-Geçici dosyaları ve yolları hariç tut
+<p>Dosyayı sürüm kontrolünden kaldırır ancak dosyayı yerel olarak korur</p>
 
-*.log
+<p><code class="language-plaintext highlighter-rouge">$ git mv [file-original] [file-renamed]</code></p>
+
+<p>Dosya adını değiştirir ve işleme için hazırlayın</p>
+
+<h2 id="i̇zlemeyi-bastır">İzlemeyi bastır</h2>
+<p>Geçici dosyaları ve yolları hariç tut</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*.log
 build/
 temp-*
-.Gitignore adlı bir metin dosyası, belirtilen kalıplarla eşleşen dosya ve yolların yanlışlıkla sürümlendirilmesini bastırır.
+</code></pre></div></div>
 
-$ git ls-files --others --ignored --exclude-standard
+<p><code class="language-plaintext highlighter-rouge">.Gitignore</code> adlı bir metin dosyası, belirtilen kalıplarla eşleşen dosya ve yolların yanlışlıkla sürümlendirilmesini bastırır.</p>
 
-Bu projedeki yok sayılan tüm dosyaları listeler
+<p><code class="language-plaintext highlighter-rouge">$ git ls-files --others --ignored --exclude-standard</code></p>
 
-Parçaları kaydet
-Eksik değişiklikleri sakla ve geri yükle
+<p>Bu projedeki yok sayılan tüm dosyaları listeler</p>
 
-$ git stash
+<h2 id="parçaları-kaydet">Parçaları kaydet</h2>
+<p>Eksik değişiklikleri sakla ve geri yükle</p>
 
-Değiştirilmiş tüm sürüm dosyalarını geçici olarak kaydedin
+<p><code class="language-plaintext highlighter-rouge">$ git stash</code></p>
 
-$ git stash pop
+<p>Değiştirilmiş tüm sürüm dosyalarını geçici olarak kaydedin</p>
 
-En son saklanan dosyaları geri yükler
+<p><code class="language-plaintext highlighter-rouge">$ git stash pop</code></p>
 
-$ git stash list
+<p>En son saklanan dosyaları geri yükler</p>
 
-Önbelleğe alınmış tüm değişiklikleri listeler
+<p><code class="language-plaintext highlighter-rouge">$ git stash list</code></p>
 
-$ git stash drop
+<p>Önbelleğe alınmış tüm değişiklikleri listeler</p>
 
-En son saklanan değişiklikleri atar
+<p><code class="language-plaintext highlighter-rouge">$ git stash drop</code></p>
 
-Geçmişi incele
-Proje dosyalarının gelişimini izlemek ve incelemek
+<p>En son saklanan değişiklikleri atar</p>
 
-$ git log
+</div>
 
-Geçerli dalın sürüm geçmişini listeler
+<div class="col-md-6">
+    
+<h2 id="geçmişi-incele">Geçmişi incele</h2>
+<p>Proje dosyalarının gelişimini izlemek ve incelemek</p>
 
-$ git log --follow [file]
+<p><code class="language-plaintext highlighter-rouge">$ git log</code></p>
 
-Yeniden adlandırmalar dahil, dosyanın sürüm geçmişini listeler
+<p>Geçerli dalın sürüm geçmişini listeler</p>
 
-$ git diff [first-branch]...[second-branch]
+<p><code class="language-plaintext highlighter-rouge">$ git log --follow [file]</code></p>
 
-İki dal arasındaki içerik farklarını gösterir
+<p>Yeniden adlandırmalar dahil, dosyanın sürüm geçmişini listeler</p>
 
-$ git show [commit]
+<p><code class="language-plaintext highlighter-rouge">$ git diff [first-branch]...[second-branch]</code></p>
 
-Belirtilen taahhüdün meta verilerini ve içerik değişikliklerini göster
+<p>İki dal arasındaki içerik farklarını gösterir</p>
 
-Tekrarlama işlemleri
-Hataları temizle ve değiştirme geçmişini yaz
+<p><code class="language-plaintext highlighter-rouge">$ git show [commit]</code></p>
 
-$ git reset [commit]
+<p>Belirtilen taahhüdün meta verilerini ve içerik değişikliklerini göster</p>
 
-Değişiklikleri yerel olarak koruyarak, [taahhüt] sonrasında verilen tüm taahhütleri geri alır.
+<h2 id="tekrarlama-işlemleri">Tekrarlama işlemleri</h2>
+<p>Hataları temizle ve değiştirme geçmişini yaz</p>
 
-$ git reset --hard [commit]
+<p><code class="language-plaintext highlighter-rouge">$ git reset [commit]</code></p>
 
-Tüm geçmişi iptal eder ve belirtilen taahhütte yapılan değişiklikleri geri alır
+<p>Değişiklikleri yerel olarak koruyarak, <code class="language-plaintext highlighter-rouge">[taahhüt]</code> sonrasında verilen tüm taahhütleri geri alır.</p>
 
-Değişiklikleri eşle
-Bir uzaktan (URL) kaydedin ve depo geçmişini değiştirin
+<p><code class="language-plaintext highlighter-rouge">$ git reset --hard [commit]</code></p>
 
-$ git fetch [remote]
+<p>Tüm geçmişi iptal eder ve belirtilen taahhütte yapılan değişiklikleri geri alır</p>
 
-Tüm geçmişi uzak depodan indirir
+<h2 id="değişiklikleri-eşle">Değişiklikleri eşle</h2>
+<p>Bir uzaktan (URL) kaydedin ve depo geçmişini değiştirin</p>
 
-$ git merge [remote]/[branch]
+<p><code class="language-plaintext highlighter-rouge">$ git fetch [remote]</code></p>
 
-Uzak dalı geçerli yerel dalla birleştirir
+<p>Tüm geçmişi uzak depodan indirir</p>
 
-$ git push [remote] [branch]
+<p><code class="language-plaintext highlighter-rouge">$ git merge [remote]/[branch]</code></p>
 
-Tüm yerel dal işlemlerini GitHub’a yükler
+<p>Uzak dalı geçerli yerel dalla birleştirir</p>
 
-$ git pull
+<p><code class="language-plaintext highlighter-rouge">$ git push [remote] [branch]</code></p>
 
-Yer imi geçmişini indirir ve değişiklikleri içerir
+<p>Tüm yerel dal işlemlerini GitHub’a yükler</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git pull</code></p>
+
+<p>Yer imi geçmişini indirir ve değişiklikleri içerir</p>
+
+</div>
