@@ -1,0 +1,32 @@
+<h2 id="giti-yükleyin">Git’i Yükleyin</h2>
+<p>GitHub, en yaygın depo eylemleri için grafiksel bir kullanıcı arabirimi ve Git’in gelişmiş senaryolar için otomatik olarak güncellenen bir komut satırı sürümü içeren masaüstü istemcileri sağlar.</p>
+
+<h3 id="github-masaüstü">GitHub Masaüstü</h3>
+<p>https://desktop.github.com/</p>
+
+<p>Linux ve POSIX sistemleri için Git dağıtımlarını resmi Git SCM web sitesinde bulabilirsiniz.</p>
+
+<h3 id="tüm-platformlar-için-git">Tüm platformlar için Git</h3>
+<p>https://git-scm.com</p>
+
+<h2 id="takım-yapılandırna">Takım yapılandırna</h2>
+<p>Tüm yerel depolar için kullanıcı bilgilerini yapılandırın</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.name "[name]"</code></p>
+
+<p>Tüm yerel depolar için kullanıcı bilgilerini yapılandırın</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git config --global user.email "[email address]"</code></p>
+
+<p>Tüm yerel depolar için eposta bilgilerini yapılandırın</p>
+
+<h2 id="create-repositories">Create repositories</h2>
+<p>Yeni bir depo başlatın veya mevcut bir URL’den bir tane edinin</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git init [project-name]</code></p>
+
+<p>Belirtilen adla yeni bir yerel depo oluşturur</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ git clone [url]</code></p>
+
+<p>Bir projeyi ve tüm sürüm geçmişini indirin</p>
